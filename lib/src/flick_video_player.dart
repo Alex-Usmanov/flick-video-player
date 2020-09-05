@@ -120,7 +120,7 @@ class _FlickVideoPlayerState extends State<FlickVideoPlayer> {
       );
     });
 
-    Overlay.of(context).insert(_overlayEntry);
+    Overlay.of(context, rootOverlay: true).insert(_overlayEntry);
   }
 
   _exitFullscreen() {
